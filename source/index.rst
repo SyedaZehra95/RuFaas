@@ -45,8 +45,6 @@ Cost estimation: Based on the type and amount of the consumed feeds, how much do
    :maxdepth: 2
    :caption: Contents:
 
-   assumptions
-
 
 
 Indices and tables

@@ -57,3 +57,19 @@ The final result allows the user to
 5.  Cost of Farm - Provides the estimated cost to feed all pens for N days
 
 
+.. _code:
+
+Run the code
+------------
+
+1.  Command : ** ./job.sh **
+
+2.  If required, mark it executable using ** chmod u+x job.sh **
+
+Python 3.6 was used.
+
+
+
+
+
+

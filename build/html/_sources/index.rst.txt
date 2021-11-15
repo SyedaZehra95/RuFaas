@@ -55,3 +55,4 @@ Indices and tables
 * :ref:`Few assumptions <understanding>`
 * :ref:`Classes and Relations <classdiagram>`
 * :ref:`Implementation <implement>`
+* :ref:`Run the Code <code>`
