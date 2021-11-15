@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Understanding and Assumptions &#8212; RuFaas-Assg 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="RuFaas Coding challenge!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="understanding-and-assumptions">
+<span id="understanding"></span><h1>Understanding and Assumptions<a class="headerlink" href="#understanding-and-assumptions" title="Permalink to this headline">¶</a></h1>
+<p>It was understood clearly from the challenge description that a farm will have N pens - A room/barn where cows of same breed are put in.
+The objective of the challenge is to find out</p>
+<ol class="arabic simple">
+<li><p>Estimated milk each pen will produce</p></li>
+<li><p>Cost to maintain each pen/Overall farm</p></li>
+<li><p>Greenhouse gas generated in this scenario</p></li>
+</ol>
+<p>In order to achieve the result, following assumptions and decision were made:</p>
+<ol class="arabic simple">
+<li><p>Each cow will produce 1 gallon of milk</p></li>
+<li><dl class="simple">
+<dt>Few calculation were reduced to basic assumptions.</dt><dd><ul class="simple">
+<li><p>Milk Estimate = Number of days * number of cows in the pen</p></li>
+<li><p><strong>Cost estimation = Number of days * number of cows in the pen * cost per cow</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<p>3.Since, each pen will have one breed, the need for having a separate cow class was eliminated as no proper reasoning for having one was laid out.</p>
+<section id="class-and-relation">
+<span id="classdiagram"></span><h2>Class and Relation<a class="headerlink" href="#class-and-relation" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/class.png" class="align-center" src="_images/class.png" />
+</section>
+<section id="implementation">
+<span id="implement"></span><h2>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>To achieve the result, I made use of Python and have implemented the solution incorporation OOP as instructed.</p></li>
+<li><p>Python- unittest library was used to perform the unit test.</p></li>
+</ol>
+<p>The final result allows the user to</p>
+<ol class="arabic simple">
+<li><p>create pen(s) - User can create a single or multiple pens. Few details will be asked for each pen.Such as</p>
+<ul class="simple">
+<li><p>Name of the breed</p></li>
+<li><p>Total capacity of the pen</p></li>
+<li><p>Cost for feeding one cow in the pen</p></li>
+</ul>
+</li>
+<li><p>Add cows - Allows user to add cows in the pen. Will prevent the user to add cows of breed for which pen doesn’t exist</p></li>
+<li><p>Milk Estimate - Provide the estimate of the milk that can be produced in N days</p></li>
+<li><p>Cost of Pen - Provides the estimated cost to feed pen for N days</p></li>
+<li><p>Cost of Farm - Provides the estimated cost to feed all pens for N days</p></li>
+</ol>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">RuFaas-Assg</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Understanding and Assumptions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#class-and-relation">Class and Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementation">Implementation</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">RuFaas Coding challenge!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Ayeen uz Zehra Syeda.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/assumptions.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

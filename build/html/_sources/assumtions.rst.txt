@@ -1,0 +1,18 @@
+.. _understanding:
+
+Understanding and Assumptions
+===============================
+
+It was understood clearly from the challenge description that a farm will have N pens - A room/barn where cows of same breed are put in.
+The objective of the challenge is to find out
+1. Estimated milk each pen will produce
+2. Cost to maintain each pen/Overall farm
+3. Greenhouse gas generated in this scenario
+
+In order to achieve the result, following assumptions and decision were made:
+1. Each cow will produce 1 gallon of milk
+2. Due to lack of data, we will calculate the milk production for each pen 
+    * Number of days * number of cows in the pen
+3. Cost estimation = Number of days * number of cows in the pen * cost per cow
+
+
